@@ -1,0 +1,35 @@
+.about {
+  padding-bottom: 94px;
+}
+.container__section-title {
+  text-align: center;
+  margin-bottom: 50px;
+
+  font-size: 36px;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+}
+.about-list {
+  display: flex;
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: $background-about-items;
+  }
+  &__title {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    @include font-properties(14, 1.14, 0.03);
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $main-white-color;
+  }
+}

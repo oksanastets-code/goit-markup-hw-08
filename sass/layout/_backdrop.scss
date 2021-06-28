@@ -1,0 +1,53 @@
+// Бекдроп
+// Модальне вікно
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $background-backdrop;
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.backdrop.is-hidden {
+  .modal {
+    transform: translate(-50%, -50%) scale(0);
+  }
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+
+  padding: 40px;
+
+  background-color: $main-white-color;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &__title {
+    display: block;
+    margin-bottom: 12px;
+
+    text-align: center;
+    @include font-properties(20, 1.15, 0.03);
+  }
+}
+
+// Кнопка модального окна
+
+.main-button--modal {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

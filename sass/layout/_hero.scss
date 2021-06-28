@@ -1,0 +1,25 @@
+//Герой
+.hero {
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      $background-hero,
+      $background-hero
+    ),
+    url(../images/bcg-img-copy.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.hero-container__title {
+  margin-bottom: 30px;
+  font-weight: 900;
+  @include font-properties(44, 1.364, 0.06);
+  text-transform: uppercase;
+  color: $main-white-color;
+}

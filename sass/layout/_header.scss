@@ -1,0 +1,10 @@
+//Хедер
+//Панель
+header {
+  border-bottom: $border-header;
+  background-color: $main-white-color;
+}
+.header {
+  display: flex;
+  align-items: center;
+}

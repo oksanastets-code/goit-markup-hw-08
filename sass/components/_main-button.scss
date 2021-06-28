@@ -1,0 +1,13 @@
+.main-button {
+  width: 200px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+
+  color: $main-white-color;
+  background-color: $accent-color;
+  font-weight: 700;
+  @include font-properties(16, 1.875, 0.06);
+
+  cursor: pointer;
+}

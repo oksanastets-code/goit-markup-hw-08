@@ -1,0 +1,18 @@
+// Логотип
+
+.logo {
+  display: block;
+
+  font-family: $logo-font;
+  font-weight: 700;
+  @include font-properties(26, 1.192, 0.03);
+  &__part--accent {
+    color: $accent-color;
+  }
+  &__part--black {
+    color: $logo-text-color;
+  }
+  &__part--white {
+    color: $main-white-color;
+  }
+}

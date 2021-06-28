@@ -1,0 +1,29 @@
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  @extend %flex-centered;
+
+  border-radius: 50%;
+  border: 1px solid $border-close-button;
+  background-color: $main-white-color;
+  color: $logo-text-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    color: $accent-color;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.1em $accent-color;
+  }
+  &__cross {
+    fill: currentColor;
+  }
+}

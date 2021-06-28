@@ -1,0 +1,46 @@
+// Проекты
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  &__name {
+    margin-bottom: 4px;
+    @include font-properties(18, 2, 0.06);
+  }
+  &__type {
+    @include font-properties(16, 1.875, 0.03);
+  }
+  &__description {
+    padding: 20px 24px;
+    border-left: $border-cards;
+    border-right: $border-cards;
+    border-bottom: $border-cards;
+  }
+  &__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    display: block;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      cursor: pointer;
+    }
+    &:hover .overlay,
+    &:focus .overlay {
+      transform: translateY(0);
+    }
+  }
+}
