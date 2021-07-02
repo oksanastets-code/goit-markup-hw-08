@@ -413,7 +413,7 @@ header {
   margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcg-img-copy.jpg);
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bcg/bcg-img-desk-1x.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
