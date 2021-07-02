@@ -1,25 +1,45 @@
 //Герой
 .hero {
-  max-width: 1600px;
-  height: 600px;
+  // max-width: 1600px;
+  max-width: 100%;
+  // height: 600px;
+  // height: ;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  // padding-top: 200px;
+  // padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-image: linear-gradient(
       to right,
       $background-hero,
       $background-hero
     ),
-    url(../images/bcg/bcg-img-desk-1x.jpg);
+    url(../images/bcg/bcg-img-mobile-1x.jpg);
   background-size: cover;
   background-position: center;
   text-align: center;
 }
+
 .hero-container__title {
   margin-bottom: 30px;
   font-weight: 900;
-  @include font-properties(44, 1.364, 0.06);
+  // @include font-properties(44, 1.364, 0.06);
+  @include font-properties(26, 1.615, 0.06);
   text-transform: uppercase;
   color: $main-white-color;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/bcg/bcg-img-tabl-1x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/bcg/bcg-img-desk-1x.jpg);
+  }
+  .hero-container__title {
+    @include font-properties(44, 1.364, 0.06);
+  }
 }
