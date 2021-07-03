@@ -1,25 +1,28 @@
 /* Блок соцмереж */
 .social-list {
-  display: flex;
-  justify-content: space-between;
+  @extend %flex-centered;
 
   &--team {
-    margin-bottom: 30px;
-    padding-right: 32px;
-    padding-left: 32px;
+    // margin-bottom: 24px;
+
+    // margin-bottom: 30px;
+    // padding-right: 32px;
+    // padding-left: 32px;
   }
-  &__icon {
-    fill: currentColor;
-  }
-  &__item--team:not(:last-child) {
+  // &__item--team:not(:last-child) {
+  //   margin-right: 10px;
+  // }
+  &__item:not(:last-child) {
     margin-right: 10px;
   }
+
   &__link {
     @extend %flex-centered;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     border: none;
+
     &--team {
       background-color: $main-white-color;
       color: $icons-color;
@@ -38,5 +41,8 @@
       background: $accent-color;
       color: $main-white-color;
     }
+  }
+  &__icon {
+    fill: currentColor;
   }
 }

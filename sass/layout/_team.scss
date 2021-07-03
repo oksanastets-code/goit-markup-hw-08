@@ -1,22 +1,40 @@
 /* Наша команда */
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   margin-left: auto;
   margin-right: auto;
   background-color: $background-buttons;
 }
 .team-list {
-  display: flex;
-  @include font-properties(16, 1.188, 0.03);
+  margin-bottom: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
 
   &__item {
+    width: 100%;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+    // @include font-properties(16, 1.188, 0.03);
     background-color: $main-white-color;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-    &:not(:last-child) {
+
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 2);
       margin-right: 30px;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 120px) / 4);
     }
   }
 
@@ -25,11 +43,13 @@
   }
 
   &__name {
+    @include font-properties(16, 1.188, 0.03);
     margin-bottom: 10px;
     font-weight: 500;
     text-align: center;
   }
   &__position {
+    @include font-properties(16, 1.188, 0.03);
     margin-bottom: 16px;
     text-align: center;
   }
