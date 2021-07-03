@@ -130,9 +130,17 @@ ul {
   display: block;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+  }
 }
 
 .logo__part--accent {
@@ -262,26 +270,29 @@ ul {
 }
 
 .main-contacts {
-  width: 231px;
-  margin-right: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .main-contacts {
+    margin-right: 70px;
+  }
 }
 
 .main-contacts > .logo {
   margin-bottom: 20px;
-  width: 231px;
 }
 
 .contact-list {
-  width: 231px;
-  font-style: normal;
-  font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
 }
 
 .contact-list__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 
 .address-link {
@@ -299,7 +310,9 @@ ul {
 
 .social-networks-contacts {
   width: 206px;
-  margin-right: 93px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
 
 .call {
@@ -313,26 +326,57 @@ ul {
 }
 
 .subscribe-form {
-  width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-form {
+    width: 570px;
+  }
 }
 
 .subscribe-form__call {
   margin-bottom: 20px;
 }
 
-.subscribe-field {
-  display: flex;
+@media screen and (min-width: 768px) {
+  .subscribe-field {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-field {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .subscribe-field__form-input {
-  margin-right: 12px;
   padding: 15px 16px;
-  width: 358px;
+  width: 100%;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: transparent;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe-field__form-input {
+    width: 450px;
+    margin-right: 12px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe-field__form-input {
+    width: 358px;
+    margin-bottom: 0;
+  }
 }
 
 .subscribe-field__form-input::placeholder {
@@ -343,6 +387,8 @@ ul {
 }
 
 .subscribe-field__main-button {
+  margin-left: auto;
+  margin-right: auto;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 
@@ -910,11 +956,26 @@ footer {
 }
 
 .footer {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 
 .backdrop {

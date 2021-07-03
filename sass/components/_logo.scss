@@ -5,7 +5,11 @@
 
   font-family: $logo-font;
   font-weight: 700;
-  @include font-properties(26, 1.192, 0.03);
+  @include font-properties(24, 1.167, 0.03);
+  @media screen and (min-width: 1200px) {
+    @include font-properties(26, 1.192, 0.03);
+  }
+
   &__part--accent {
     color: $accent-color;
   }
