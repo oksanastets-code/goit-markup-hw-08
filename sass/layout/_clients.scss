@@ -8,9 +8,7 @@
 }
 .clients-list {
   display: flex;
-  // justify-content: space-between;
   @media screen and (max-width: 1199px) {
-    // display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
@@ -34,9 +32,6 @@
       margin-right: 30px;
       margin-bottom: 0;
     }
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
   }
   &__icon {
     fill: currentColor;

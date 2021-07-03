@@ -1,16 +1,25 @@
 // Портфолио
 // Фильтр
 .portfolio-container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $main-white-color;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .filter-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
-  &__item:not(:last-child) {
+  flex-wrap: wrap;
+  margin-right: -8px;
+  margin-bottom: -15px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  &__item {
     margin-right: 8px;
+    margin-bottom: 15px;
   }
   &__button {
     font-weight: 500;
