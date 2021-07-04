@@ -43,10 +43,9 @@
       padding-right: 10px;
       @include font-properties(18, 1.22, 0.02);
       color: $accent-color;
-
-      &__icon {
-        fill: currentColor;
-      }
     }
+  }
+  &__icon {
+    fill: currentColor;
   }
 }

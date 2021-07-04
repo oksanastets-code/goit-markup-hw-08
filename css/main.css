@@ -173,6 +173,7 @@ input:focus {
   width: 100vw;
   height: 100vh;
   padding: 48px 40px;
+  z-index: 10;
 }
 
 .mobile-nav__wrapper {
@@ -200,6 +201,43 @@ input:focus {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .nav-list {
+    display: flex;
+    margin-left: 93px;
+  }
+  .nav-list__item {
+    position: relative;
+  }
+  .nav-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .nav-list__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .nav-list__link:hover, .nav-list__link:focus, .nav-list__link--current {
+    color: #2196f3;
+  }
+  .nav-list__link--current::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    margin-bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196f3;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .media-list {
     margin-top: auto;
@@ -218,6 +256,53 @@ input:focus {
     line-height: 1.167;
     letter-spacing: 0.02em;
     color: #757575;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .media-list {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+  }
+  .media-list__link {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .media-list__link:hover, .media-list__link:focus {
+    color: #2196f3;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .media-list {
+    flex-direction: row;
+    margin-left: auto;
+  }
+  .media-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .media-list__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .media-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: #757575;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .media-list__link:hover, .media-list__link:focus {
+    color: #2196f3;
   }
 }
 
@@ -287,7 +372,7 @@ input:focus {
   color: #2196f3;
 }
 
-.social-list__link--mobile__icon {
+.social-list__icon {
   fill: currentColor;
 }
 
@@ -453,8 +538,8 @@ input:focus {
 }
 
 .close-button--mobile {
-  top: 10px;
-  right: 15px;
+  top: 21px;
+  right: 25px;
   width: 40px;
   height: 40px;
   border: none;
