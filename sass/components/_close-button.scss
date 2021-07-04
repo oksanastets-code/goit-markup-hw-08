@@ -20,8 +20,19 @@
     color: $accent-color;
   }
   &:focus {
-    outline: none;
     box-shadow: 0 0 0 0.1em $accent-color;
+  }
+  &--mobile {
+    top: 10px;
+    right: 15px;
+
+    width: 40px;
+    height: 40px;
+    border: none;
+    color: $primary-text-color;
+    &:focus {
+      box-shadow: none;
+    }
   }
   &__cross {
     fill: currentColor;

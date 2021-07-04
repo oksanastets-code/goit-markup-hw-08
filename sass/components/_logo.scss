@@ -19,4 +19,7 @@
   &__part--white {
     color: $main-white-color;
   }
+  &:focus {
+    box-shadow: 0 0 0 0.1em $accent-color;
+  }
 }

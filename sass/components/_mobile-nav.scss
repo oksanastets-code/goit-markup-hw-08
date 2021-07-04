@@ -1,0 +1,20 @@
+.mobile-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $main-white-color;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+
+  //   padding-top: 48px;
+  //   padding-bottom: 48px;
+  //   padding-left: 40px;
+  //   padding-right: auto;
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+}

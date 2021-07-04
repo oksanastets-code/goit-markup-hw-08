@@ -1,21 +1,18 @@
 /* Блок соцмереж */
 .social-list {
   @extend %flex-centered;
-
-  &--team {
-    // margin-bottom: 24px;
-
-    // margin-bottom: 30px;
-    // padding-right: 32px;
-    // padding-left: 32px;
+  &--mobile {
+    justify-content: start;
+    margin-right: -20px;
+    margin-left: -10px;
   }
-  // &__item--team:not(:last-child) {
-  //   margin-right: 10px;
-  // }
   &__item:not(:last-child) {
     margin-right: 10px;
   }
 
+  &__item--mobile:not(:last-child) {
+    border-right: 1px solid $border-form-input;
+  }
   &__link {
     @extend %flex-centered;
     width: 44px;
@@ -41,8 +38,15 @@
       background: $accent-color;
       color: $main-white-color;
     }
-  }
-  &__icon {
-    fill: currentColor;
+    &--mobile {
+      margin-left: 10px;
+      padding-right: 10px;
+      @include font-properties(18, 1.22, 0.02);
+      color: $accent-color;
+
+      &__icon {
+        fill: currentColor;
+      }
+    }
   }
 }

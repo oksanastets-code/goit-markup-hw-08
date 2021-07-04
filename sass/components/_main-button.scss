@@ -10,4 +10,7 @@
   @include font-properties(16, 1.875, 0.06);
 
   cursor: pointer;
+  &:focus {
+    box-shadow: 0 0 0 0.1em $accent-color;
+  }
 }

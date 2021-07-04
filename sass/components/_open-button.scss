@@ -1,0 +1,23 @@
+.open-button {
+  @extend %null;
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin: 10px 0;
+
+  @extend %flex-centered;
+
+  background-color: $main-white-color;
+  color: $logo-text-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    cursor: pointer;
+    color: $accent-color;
+  }
+
+  &__burger {
+    fill: currentColor;
+  }
+}

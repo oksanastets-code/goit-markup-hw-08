@@ -10,3 +10,11 @@ ul {
   list-style: none;
   @extend %null;
 }
+button {
+  @extend %null;
+}
+button:focus,
+a:focus,
+input:focus {
+  outline: none;
+}
