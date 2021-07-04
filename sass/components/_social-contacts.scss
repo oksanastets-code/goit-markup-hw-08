@@ -3,5 +3,10 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-  // margin-right: 93px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+  //
 }

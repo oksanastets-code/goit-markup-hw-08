@@ -278,6 +278,8 @@ ul {
 @media screen and (min-width: 1200px) {
   .main-contacts {
     margin-right: 70px;
+    margin-left: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -315,6 +317,14 @@ ul {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .social-networks-contacts {
+    margin-right: 93px;
+    margin-left: 0;
+    margin-bottom: 0;
+  }
+}
+
 .call {
   margin-bottom: 20px;
   font-weight: 700;
@@ -333,6 +343,8 @@ ul {
 @media screen and (min-width: 1200px) {
   .subscribe-form {
     width: 570px;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -742,6 +754,12 @@ header {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .clients-list {
+    margin-right: -30px;
+  }
+}
+
 .clients-list__item {
   width: 170px;
   height: 92px;
@@ -975,6 +993,7 @@ footer {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+    text-align: unset;
   }
 }
 
