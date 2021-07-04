@@ -1,7 +1,7 @@
 // Кастомный чекбокс
 .agreement {
-  @extend %flex-centered;
   margin-bottom: 30px;
+  @extend %flex-centered;
   &__icon {
     width: 16px;
     height: 15px;
@@ -11,8 +11,17 @@
   &__text,
   &__link {
     display: inline-block;
-    @include font-properties(14, 1.71, 0.03);
+    @media screen and (max-width: 1199px) {
+      @include font-properties(12, 1.167, 0.03);
+    }
     color: $secondary-text-color;
+    @media screen and (min-width: 1200px) {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+
+      @include font-properties(14, 1.71, 0.03);
+    }
   }
   &__link {
     color: $accent-color;
