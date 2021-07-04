@@ -16,6 +16,11 @@
       url(../images/bcg/bcg-img-mobile-1x.jpg);
     background-size: cover;
     background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bcg/bcg-img-mobile-2x.jpg);
+    }
   }
   text-align: center;
   @media screen and (min-width: 768px) {
@@ -27,6 +32,11 @@
       url(../images/bcg/bcg-img-tabl-1x.jpg);
     background-size: cover;
     background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bcg/bcg-img-tabl-2x.jpg);
+    }
   }
   @media screen and (min-width: 1200px) {
     padding-top: 200px;
@@ -39,6 +49,11 @@
       url(../images/bcg/bcg-img-desk-1x.jpg);
     background-size: cover;
     background-position: center;
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/bcg/bcg-img-desk-2x.jpg);
+    }
   }
 }
 
