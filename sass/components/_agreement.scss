@@ -16,10 +16,6 @@
     }
     color: $secondary-text-color;
     @media screen and (min-width: 1200px) {
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
-
       @include font-properties(14, 1.71, 0.03);
     }
   }
@@ -41,7 +37,7 @@
       fill: transparent;
     }
     &:focus-within + .agreement__icon {
-      box-shadow: 0 0 0 1px $accent-color;
+      // box-shadow: 0 0 0 1px $accent-color;
     }
   }
 }

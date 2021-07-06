@@ -59,6 +59,15 @@ body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   color: #212121;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media screen and (max-width: 767px) {
+  body.modal-open {
+    overflow: hidden;
+  }
 }
 
 p {
@@ -615,10 +624,6 @@ input:focus {
 .agreement__checkbox:checked + .agreement__icon {
   background-image: url("../images/check.svg");
   fill: transparent;
-}
-
-.agreement__checkbox:focus-within + .agreement__icon {
-  box-shadow: 0 0 0 1px #2196f3;
 }
 
 .open-button {
