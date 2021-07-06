@@ -4,8 +4,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
-  }
+  // @media screen and (min-width: 768px) {
+  // }
   @media screen and (min-width: 1200px) {
     margin-right: 70px;
     margin-left: 0;
@@ -14,12 +14,8 @@
 }
 .main-contacts > .logo {
   margin-bottom: 20px;
-  // width: 231px;
 }
 .contact-list {
-  // width: 231px;
-  // font-style: normal;
-  // font-weight: normal;
   @include font-properties(14, 1.714, 0.03);
 
   &__item:not(:last-child) {

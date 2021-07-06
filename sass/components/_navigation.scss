@@ -1,12 +1,9 @@
 .nav-list {
   @media screen and (max-width: 767px) {
     margin-bottom: -32px;
-    // margin-bottom: auto;
 
     &__link {
       display: block;
-      // padding-top: 32px;
-      // padding-bottom: 32px;
       margin-bottom: 32px;
       font-weight: 500;
       @include font-properties(40, 1.175, 0.02);
